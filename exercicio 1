@@ -1,0 +1,19 @@
+A = int(input('Digite o 1 lado do trinangulo'))
+B = int(input('Digite o 2 lado do trinangulo'))
+C = int(input('Digite o 3 lado do trinangulo'))
+
+if A > 0 and B > 0 and C > 0:
+    if A + B > C    and A + C > B and B + C > A:
+    # se voce chegou ate aqui é porque o triangulo é valido!
+      if A != B and A != C and B != C:
+          print('triangulo escaleno') 
+      else:
+          if A == B and A == C and B == C:
+              print('triangulo equilatero!')
+          else:
+              print("triangulo isoceles")
+    else:
+        print('ao menos um dos valores indicados não servem para formar um triangulo')
+
+else:
+    print('ao menos um dos valores indicados não servem para formar um triangulo')
